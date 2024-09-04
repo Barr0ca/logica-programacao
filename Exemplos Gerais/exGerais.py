@@ -111,3 +111,48 @@
 # while i<5:
 #     print(lista[i])
 #     i+=1
+
+# Exemplo 012
+# lista = [10, 20, 30, 40, 50]
+# del lista[2]
+# i=0
+# while i<4:
+#     print(lista[i])
+#     i+=1
+
+# Exemplo 013
+# lista = [10, 50, 5, 2, 100]
+# elemento_removido = lista.pop(2)
+# print(f'Elemento removido: {elemento_removido}')
+# i=0
+# while i<4:
+#     print(lista[i])
+#     i+=1
+
+# Exemplo 014
+# lista = [10, 50, 5, 2, 100]
+# lista.remove(5)
+# i=0
+# while i<4:
+#     print(lista[i])
+#     i+=1
+
+# Exemplo 015
+# lista = ['algoritimo','é','muito','bom']
+# lista.remove('muito')
+# i=0
+# while i<3:
+#     print(lista[i])
+#     i+=1
+
+# Exemplo 016
+# lista = [10, 50, 5, 2, 100]
+# tamanho = len(lista)
+# print(f'O tamanho da lista é: {tamanho}')
+
+# Exemplo 017
+# lista = [10, 50, 5, 2, 100]
+# i = 0
+# for c in lista:
+#     print(f'Elemento {i}: {c}')
+#     i+=1
