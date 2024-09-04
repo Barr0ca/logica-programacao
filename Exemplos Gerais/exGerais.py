@@ -94,12 +94,20 @@
 #     print(lista[c])
 
 # Exemplo 010
-lista = []
-lista.append('João')
-lista.append('Chico')
-lista.append('Antônio')
-lista.append('Jeff')
-i=0
-while i<4:
-    print(lista[i])
-    i+=1
+# lista = []
+# lista.append('João')
+# lista.append('Chico')
+# lista.append('Antônio')
+# lista.append('Jeff')
+# i=0
+# while i<4:
+#     print(lista[i])
+#     i+=1
+
+# Exemplo 011
+# lista = ['algoritimo','é','muito','bom']
+# lista.insert(2, 'realmente')
+# i=0
+# while i<5:
+#     print(lista[i])
+#     i+=1
