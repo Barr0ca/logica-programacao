@@ -156,3 +156,16 @@
 # for c in lista:
 #     print(f'Elemento {i}: {c}')
 #     i+=1
+
+# Exemplo 018
+# def quadrado(numero):
+#     return numero*numero
+# print(quadrado(5))
+
+# Exemplo 019
+# def quadrado(numero):
+#     return numero**2
+# num_quadrado = 0
+# for c in range(6):
+#     num_quadrado = quadrado(c)
+#     print(num_quadrado)
