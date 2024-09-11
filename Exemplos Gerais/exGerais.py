@@ -165,7 +165,10 @@
 # Exemplo 019
 # def quadrado(numero):
 #     return numero**2
+# def imprime_quadrado(numero):
+#     if numero<=1:
+#         return
+#     print(quadrado(numero))
 # num_quadrado = 0
 # for c in range(6):
-#     num_quadrado = quadrado(c)
-#     print(num_quadrado)
+#     imprime_quadrado(c)
