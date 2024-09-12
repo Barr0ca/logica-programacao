@@ -1,7 +1,11 @@
 def menu():
+    print('')
     print('### MENU ###')
     print('0 - SAIR')
     print('1 - SOMAR')
+    print('2 - SUBTRAIR')
+    print('3 - MULTIPLICAR')
+    print('4 - DIVIDIR')
     opcao = int(input('Escolha uma opção: '))
     return opcao
 
@@ -18,6 +22,9 @@ def multiplicar(numero01, numero02):
     return resultado
 
 def dividir(numero01, numero02):
+    if numero02 == 0:
+        print('\nNÃO PODE DIVIDIR POR ZERO\n')
+        return 
     resultado = numero01/numero02
     return resultado
 
@@ -35,4 +42,10 @@ while opcao != 0:
     numero02 = float(input('Informe o 2° número: '))
     if opcao == 1:
         resultado = somar(numero01, numero02)
+    elif opcao == 2:
+        resultado = subtrair(numero01, numero02)
+    elif opcao == 3:
+        resultado = multiplicar(numero01, numero02)    
+    elif opcao == 4:
+        resultado = dividir(numero01, numero02)
     print(f'Resultado: {resultado}')
