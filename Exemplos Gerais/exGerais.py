@@ -172,3 +172,14 @@
 # num_quadrado = 0
 # for c in range(6):
 #     imprime_quadrado(c)
+
+# Exemplo 020
+# def func():
+#     global x
+#     x=1
+#     return print(x)
+
+# x = 42
+# print(x)
+# func()
+# print(x)
