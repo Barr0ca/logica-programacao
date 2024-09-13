@@ -1,0 +1,11 @@
+def maiorValor(numero01, numero02):
+    if numero01 > numero02:
+        return numero01
+    else:
+        return numero02
+    
+lista = []
+for c in range(2):
+    numero = float(input(f'Informe o {c+1}° número: '))
+    lista.append(numero)
+print(f'O maior entre os dois é {maiorValor(lista[0], lista[1])}')
