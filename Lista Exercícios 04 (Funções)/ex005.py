@@ -37,20 +37,36 @@ def menorValorEntreTres(numero01, numero02, numero03):
         return numero03
 
 def main():
-    exibeOpcoes()
-    if exibeOpcoes() == 1:
-        maiorValorEntreDois()
-    elif exibeOpcoes() == 2:
-        menorValorEntreDois()
-    elif exibeOpcoes() == 3:
-        maiorValorEntreTres()
-    elif exibeOpcoes() == 4:
-        menorValorEntreTres()
-    elif exibeOpcoes() == 0:
-        return
+    global opcao
+    global lista
+    while opcao != 0:
+        opcao = exibeOpcoes()
+        if opcao <= 0:
+            print('Finalizando o programa...')
+            break
+        elif opcao == 1:
+            for c in range(2):
+                numero = float(input(f'Informe o {c+1}° número: '))
+                lista.append(numero)
+            print(f'O maior entre os dois é {maiorValorEntreDois(lista[0], lista[1])}')
+        elif opcao == 2:
+            for c in range(2):
+                numero = float(input(f'Informe o {c+1}° número: '))
+                lista.append(numero)
+            print(f'O menor entre os dois é {menorValorEntreDois(lista[0], lista[1])}')
+        elif opcao == 3:
+            for c in range(3):
+                numero = float(input(f'Informe o {c+1}° número: '))
+                lista.append(numero)
+            print(f'O maior entre os três é {maiorValorEntreTres(lista[0], lista[1], lista[2])}')
+        elif opcao == 4:
+            for c in range(3):
+                numero = float(input(f'Informe o {c+1}° número: '))
+                lista.append(numero)
+            print(f'O menor entre os três é {menorValorEntreTres(lista[0], lista[1], lista[2])}')
+        lista = [ ]
 
 opcao = 1
+lista = []
 
-while opcao != 0:
-    opcao = exibeOpcoes()
-    main()
+main()
