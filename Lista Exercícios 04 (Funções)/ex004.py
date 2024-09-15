@@ -10,4 +10,4 @@ lista = []
 for c in range(3):
     numero = float(input(f'Informe o {c+1}° número: '))
     lista.append(numero)
-print(f'O menor entre os dois é {menorValor(lista[0], lista[1], lista[2])}')
+print(f'O menor entre os três é {menorValor(lista[0], lista[1], lista[2])}')
