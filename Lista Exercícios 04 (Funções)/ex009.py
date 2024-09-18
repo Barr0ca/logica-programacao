@@ -25,33 +25,36 @@ def comJuros(valor_produto, prestacoes):
         else:
             return (valor_produto*1.03)/prestacoes 
 
-opcao = 1
-total_gasto = 0
-valor_produto = 0
+def main():
+    opcao = 1
+    total_gasto = 0
+    valor_produto = 0
 
-while opcao != 0:
-    opcao = menu()
+    while opcao != 0:
+        opcao = menu()
 
-    if opcao == 1:
-        valor_produto = float(input('Informe o valor do produto a ser comprado: R$ '))
-        print(f'O valor do produto ficou R$ {aVista(valor_produto):.2f} a vista.')
-        valor_produto = valor_produto-(valor_produto*0.1)
-
-    elif opcao == 2:
-        valor_produto = float(input('Informe o valor do produto a ser comprado: R$ '))
-        print(f'O valor do produto ficou R$ {valor_produto:.2f} dividido em 2 de R$ {duasVezes(valor_produto):.2f}')
-
-    elif opcao == 3:
-        valor_produto = float(input('Informe o valor do produto a ser comprado: R$ '))
-        prestacoes = int(input('Informe a quantidade de vezes que quer dividir (3 a 10 vezes): '))
-        print(f'O valor do produto ficou {(comJuros(valor_produto, prestacoes)*prestacoes):.2f}, dividido em {prestacoes} de R$ {comJuros(valor_produto, prestacoes):.2f} ')
-        if valor_produto > 100:
-            valor_produto = valor_produto*1.03
-        if prestacoes == 1:
+        if opcao == 1:
+            valor_produto = float(input('Informe o valor do produto a ser comprado: R$ '))
+            print(f'O valor do produto ficou R$ {aVista(valor_produto):.2f} a vista.')
             valor_produto = valor_produto-(valor_produto*0.1)
 
-    elif opcao == 4:
-        print(f'Você gastou R$ {total_gasto:.2f} até agora na loja.')
+        elif opcao == 2:
+            valor_produto = float(input('Informe o valor do produto a ser comprado: R$ '))
+            print(f'O valor do produto ficou R$ {valor_produto:.2f} dividido em 2 de R$ {duasVezes(valor_produto):.2f}')
 
-    total_gasto += valor_produto
-    valor_produto = 0
+        elif opcao == 3:
+            valor_produto = float(input('Informe o valor do produto a ser comprado: R$ '))
+            prestacoes = int(input('Informe a quantidade de vezes que quer dividir (3 a 10 vezes): '))
+            print(f'O valor do produto ficou {(comJuros(valor_produto, prestacoes)*prestacoes):.2f}, dividido em {prestacoes} de R$ {comJuros(valor_produto, prestacoes):.2f} ')
+            if valor_produto > 100:
+                valor_produto = valor_produto*1.03
+            if prestacoes == 1:
+                valor_produto = valor_produto-(valor_produto*0.1)
+
+        elif opcao == 4:
+            print(f'Você gastou R$ {total_gasto:.2f} até agora na loja.')
+
+        total_gasto += valor_produto
+        valor_produto = 0
+
+main()
